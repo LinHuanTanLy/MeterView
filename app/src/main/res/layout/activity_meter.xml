@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/action_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ly.qr.meter.MeterView
+        android:id="@+id/mv_controller_target"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:def_number_circle_radius="6dp"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.66"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_controller_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/mv_controller_target">
+
+        <CheckBox
+            android:id="@+id/cb_controller_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"/>
+
+        <CheckBox
+            android:id="@+id/cb_controller_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"/>
+
+        <CheckBox
+            android:id="@+id/cb_controller_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3"/>
+
+        <CheckBox
+            android:id="@+id/cb_controller_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"/>
+
+        <CheckBox
+            android:id="@+id/cb_controller_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"/>
+
+        <CheckBox
+            android:id="@+id/cb_controller_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"/>
+
+        <CheckBox
+            android:id="@+id/cb_controller_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7"/>
+
+        <CheckBox
+            android:id="@+id/cb_controller_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_controller_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更新数据"
+        app:layout_constraintTop_toBottomOf="@id/ll_controller_group"/>
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/bt_controller_update"
+        android:layout_width="match_parent"
+        android:hint="设置打卡目标"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="13sp"
+        android:id="@+id/et_controller_clock"
+        android:ellipsize="end"
+        android:maxLength="1"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bt_controller_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置打卡目标"
+        app:layout_constraintTop_toBottomOf="@id/et_controller_clock"/>
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/bt_controller_clock"
+        android:layout_width="match_parent"
+        android:hint="设置下一杯"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="13sp"
+        android:id="@+id/et_controller_next"
+        android:ellipsize="end"
+        android:maxLength="1"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bt_controller_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置下一杯"
+        app:layout_constraintTop_toBottomOf="@id/et_controller_next"/>
+</android.support.constraint.ConstraintLayout>

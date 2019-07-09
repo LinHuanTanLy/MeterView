@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MeterView">
+        <!--默认的边距-->
+        <attr name="def_padding" format="dimension" />
+        <!--刻度的字体大小-->
+        <attr name="def_font_size" format="dimension" />
+        <!--刻度的字体颜色-->
+        <attr name="def_font_color" format="color" />
+        <!--默认的底色圆弧宽度-->
+        <attr name="def_circle_width" format="dimension" />
+        <!--默认的底色圆弧的颜色值-->
+        <attr name="def_circle_color" format="dimension" />
+        <!--进度条的颜色值 （渐变起始色）-->
+        <attr name="def_progress_gradient_start" format="color" />
+        <!--进度条的颜色值 （渐变起始色）-->
+        <attr name="def_progress_gradient_end" format="color" />
+        <!--数字圆环的大小-->
+        <attr name="def_number_circle_radius" format="dimension" />
+        <!--标记图片的大小size-->
+        <attr name="def_target_img_size" format="dimension" />
+    </declare-styleable>
+</resources>
